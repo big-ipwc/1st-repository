@@ -45,14 +45,17 @@ while num_input != 0:
         print("Ответ: ", product)
 
     if num_input == 4:
-        print("Введите первый элемент:")
-        div1_input = float(input())
-        print("Введите второй элемент:")
-        div2_input = float(input())
+        try:
+            print("Введите первый элемент:")
+            div1_input = float(input())
+            print("Введите второй элемент:")
+            div2_input = float(input())
 
-        division = div1_input / div2_input
-        print("Ответ: ", division)
-
+            division = div1_input / div2_input
+            print("Ответ: ", division)
+        except ZeroDivisionError:
+            print("На 0 делить нельзя!")
+            
     if num_input == 5:
         print("Введите первый элемент:")
         exp1_input = int(input())
