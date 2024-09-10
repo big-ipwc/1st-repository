@@ -1,2 +1,3 @@
 # 1st-repository
-TEST
+Test repository for the first homework projects
+
